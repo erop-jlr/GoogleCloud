@@ -1,18 +1,16 @@
 {
-  "name": "cloudsql-ssl-connector",
+  "name": "cloud-sql-ts-app",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dbstart:edm": "cloud-sql-proxy.x64.exe jlr-gdd-infotainment-dev:europe-west2:jlr-engineering-db-preprod --private-ip --address 127.0.0.1 --port 3306"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "mysql2": "^3.9.0"
+    "dotenv": "^16.0.0",
+    "mysql2": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.2.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.0.0"
   }
 }
